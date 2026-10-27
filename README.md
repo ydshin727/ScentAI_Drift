@@ -88,7 +88,9 @@ docker compose --profile full up -d --build
 #   화면 http://localhost:3000   API http://localhost:8080/api/accuracy
 
 # 3-B) 또는 직접 실행
+# 터미널 1
 cd backend && ./gradlew bootRun          # Windows: gradlew.bat bootRun
+# 터미널 2
 cd frontend && npm install && npm run dev  # http://localhost:5173
 ```
 
