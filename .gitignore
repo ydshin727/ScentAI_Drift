@@ -1,0 +1,20 @@
+# 원본 데이터와 중간 산출물 (UCI 데이터는 라이선스 안내만 하고 올리지 않는다)
+data/
+gas_drift.npz
+
+# 빌드 산출물, 의존성
+node_modules/
+dist/
+build/
+.gradle/
+*.class
+*.jar
+
+# 환경 설정, 로그, IDE
+.env
+.env.*
+*.log
+.idea/
+.vscode/
+__pycache__/
+*.pyc

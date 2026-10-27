@@ -1,0 +1,15 @@
+# Replace the default application.properties with this file.
+server:
+  port: 8080
+
+spring:
+  datasource:
+    # Host port 3307 = the MySQL container from docker-compose.yml (not a locally installed MySQL on 3306)
+    url: jdbc:mysql://localhost:3307/gasdrift?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: gasdrift
+    # Local development value shared with docker-compose.yml. Override with the env var if needed.
+    password: ${GASDRIFT_DB_PASSWORD:gasdrift1234}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none

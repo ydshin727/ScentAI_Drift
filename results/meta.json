@@ -1,0 +1,22 @@
+{
+  "model": "RandomForestClassifier",
+  "n_estimators": 100,
+  "random_state": 42,
+  "adapt_ratio": 0.2,
+  "v1_train": "batch 1",
+  "v2_train": "batch 1 + 20% of batch k",
+  "batch1_cv5_accuracy": 0.9663,
+  "pca_fit_on": "batch 1 (StandardScaler + PCA)",
+  "pca_explained_variance_ratio": [
+    0.5776,
+    0.2374
+  ],
+  "gas_labels": {
+    "1": "Ethanol",
+    "2": "Ethylene",
+    "3": "Ammonia",
+    "4": "Acetaldehyde",
+    "5": "Acetone",
+    "6": "Toluene"
+  }
+}
