@@ -8,7 +8,6 @@ dist/
 build/
 .gradle/
 *.class
-*.jar
 
 # 환경 설정, 로그, IDE
 .env
